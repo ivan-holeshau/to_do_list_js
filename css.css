@@ -1,103 +1,115 @@
 .task {
-  max-width: 90% !important;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-control:focus {
-
-  border-color: #ced4da !important;
-  box-shadow: none !important;
+    border-color: #ced4da !important;
+    box-shadow: none !important;
 }
 
 button:active,
 button:focus {
-
-  box-shadow: none !important;
-  outline: none !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 button::-moz-focus-inner {
-  border: 0 !important;
+    border: 0 !important;
 }
 
 div.list {
-  min-height: 20px !important;
-  box-shadow: 0 50 px rgba(0, 0, 0, 0.86);
+    min-height: 20px !important;
+    box-shadow: 0 50 px rgba(0, 0, 0, 0.86);
 }
 
 .spanvmiddle {
-  display: inline-block;
-  height: 100%;
-  width: 0px;
-  overflow: hidden;
-  vertical-align: middle;
-
-}
-
-div {
-  /* border: 2px solid black; */
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 .center {
-  vertical-align: middle;
-  font-size: 14px;
-  display: inline-block !important;
-  margin: 10px;
-  width: calc(100% - 112px);
+    vertical-align: middle;
+    font-size: 14px;
+    display: inline-block !important;
+    margin: 10px;
+    margin-left: 1px;
+    width: calc(100% - 112px);
+    text-indent: 5px;
 }
 
 .right {
-  vertical-align: middle;
-
-  font-size: 14px;
-  display: inline-block !important;
-  margin: 10px;
-
+    vertical-align: middle;
+    font-size: 14px;
+    display: inline-block !important;
+    margin: 10px;
+    color: red !important;
 }
 
 .left {
-  vertical-align: middle;
-  font-size: 30px;
-  display: inline-block !important;
-  margin: 10px;
+    vertical-align: middle;
+    font-size: 30px;
+    display: none !important;
+    margin: 10px;
+}
 
+input[type="checkbox"]:checked+label::before {
+    content: '';
+    background-size: 100%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K)
+}
 
+label {
+    padding-left: 20px;
+    border-radius: 50%;
+}
+
+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: -10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid green;
 }
 
 .my-card {
-
-  height: 100%;
-  margin: 0 auto;
-  display: block !important;
-
+    height: 100% !important;
+    margin: 0 auto;
+    display: block !important;
+    transition: 2s !important;
 }
 
 .my-card-finished {
-
-  background: #00FF00 !important;
-
-  height: 100%;
-  margin: 0 auto;
-  display: block !important;
-
+    background: rgb(210, 250, 204) !important;
+    height: 100%;
+    margin: 0 auto;
+    display: block !important;
+    transition: 2s !important;
 }
 
 ul {
-  margin: 0px !important;
-  padding: 0px;
+    margin: 0px !important;
+    padding: 0px;
 }
 
 li {
-  height: 100px;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 li:last-child {
-  margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 h1 {
-  text-align: center;
-  font-size: 140% !important;
+    text-align: center;
+    font-size: 140% !important;
+    margin-top: 20px !important;
 }
